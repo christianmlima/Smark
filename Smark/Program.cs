@@ -8,7 +8,7 @@ class ProtocolGenerator
 
     public static string GenerateProtocol(string companyIdentifier)
     {
-        // realiza o lock para 
+        // Realiza o lock para evitar criação de sequencial idêntico
         lock (lockObject)
         {
             string today = DateTime.UtcNow.ToString("yyyyMMdd");
